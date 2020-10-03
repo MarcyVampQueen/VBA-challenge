@@ -29,7 +29,9 @@ Sub stonks()
         zeroSux = 0
         ' label the columns on the sheet
         ws.Range("I1:P1").Value = Array("Ticker Symbol", "Yearly Change", "Percent Change", "Total Stock Volume", "", "", "Ticker", "Volume")
-        ws.Range("N2:N4").Value = Array("Greatest % increase", "Greatest % decrease", "Greatest total volume")
+        ws.Range("N2").Value = "Greatest % increase"
+        ws.Range("N3").Value = "Greatest % decrease"
+        ws.Range("N4").Value = "Greatest total volume"
         
         'Loop through the rows
         For i = 2 To rowCount
